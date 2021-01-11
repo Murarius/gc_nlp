@@ -6,7 +6,7 @@ defmodule GcNLP do
   require Logger
   alias Goth.Token
 
-  @base_url     "https://language.googleapis.com/v1beta1/"
+  @base_url     "https://language.googleapis.com/v1beta2/"
   @cache_ttl    Application.get_env(:gc_nlp, :cache_ttl)
   @token_ttl    Application.get_env(:gc_nlp, :token_ttl)
   @request_opts [connect_timeout: 1000000, recv_timeout: 1000000, timeout: 1000000]

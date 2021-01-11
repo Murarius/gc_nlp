@@ -30,11 +30,10 @@ defmodule GcNLP.Mixfile do
   end
 
   defp deps do
-    [{:httpoison, "~> 0.11"},
-     {:cachex, "~> 2.1"},
-     {:goth, "~> 0.3.1"},
+    [{:httpoison, ">= 1.7.0"},
+    {:cachex, "~> 3.3"},
+     {:goth, "~> 1.2.0"},
      {:ex_doc, "~> 0.15", only: :dev, override: true},
      {:earmark, "~> 1.2.0", only: :dev, override: true}]
   end
-  
 end
